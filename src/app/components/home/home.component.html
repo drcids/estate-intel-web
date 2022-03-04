@@ -1,0 +1,42 @@
+<div class="page-content">
+    <div class="shapes-section">
+        <div class="text-section">
+            <span>
+                shapes
+            </span>
+        </div>
+        <div class="value-section">
+            <div class="each-value-section" *ngFor="let x of shapes" [class.active]="x.active" (click)="addShapeToFilter(x)">
+                <span>
+                    {{x.shape}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="color-section">
+        <div class="text-section">
+            <span>
+                colors
+            </span>
+        </div>
+        <div class="value-section">
+            <div class="each-value-section" [class.active]="x.active" (click)="addColorToFilter(x)"
+            *ngFor="let x of colors" [style.background-color]="x.color">
+            </div>
+        </div>
+    </div>
+    <div class="grid-section">
+        <div class="text-section">
+            <span>
+                {{gridTitle}}
+            </span>
+        </div>
+        <div class="grid-item-section" *ngFor="let x of items | filterRegion:filter">
+            <div class="grid-content" [style.background-color]="x.color" [ngClass]="{
+                'circle': x.shape == 'circle',
+                'square': x.shape == 'square',
+                'rectangle': x.shape == 'rectangle'
+            }"></div>
+        </div>
+    </div>
+</div>

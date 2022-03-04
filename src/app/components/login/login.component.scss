@@ -1,0 +1,23 @@
+.page-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .login-section{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            width: auto;
+            background: var(--btn-color);
+            color: var(--btn-text-color);
+            font-size: var(--small-font-size);
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+    }
+}

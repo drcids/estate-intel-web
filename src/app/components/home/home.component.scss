@@ -1,0 +1,307 @@
+.page-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .shapes-section{
+        height: auto;
+        width: 90%;
+        margin: 10px 5%;
+
+        .text-section{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span{
+                font-size: var(--normal-font-size);
+                font-weight: bold;
+                text-transform: capitalize;
+                color: var(--primary-text-color);
+            }
+        }
+
+        .value-section{
+            height: auto;
+            width: 100%;
+
+            .each-value-section{
+                float: left;
+                width: auto;
+                height: 30px;
+                margin: 10px 2.5%;
+                padding: 5px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+    
+                span{
+                    font-size: var(--small-font-size);
+                    font-weight: normal;
+                    text-transform: capitalize;
+                    color: var(--secondary-text-color);
+                }
+
+            }
+
+            .active{
+                border: 1px solid var(--border-color);
+                box-shadow: var(--item-box-shadow);
+            }
+        }
+    }
+    .color-section{
+        height: auto;
+        width: 90%;
+        margin: 10px 5%;
+
+        .text-section{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span{
+                font-size: var(--normal-font-size);
+                font-weight: bold;
+                text-transform: capitalize;
+                color: var(--primary-text-color);
+            }
+        }
+
+        .value-section{
+            height: auto;
+            width: 100%;
+
+            .each-value-section{
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin: 10px 2.5%;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+
+            }
+
+            .active{
+                border: 1px solid var(--border-color);
+                box-shadow: var(--item-box-shadow);
+            }
+        }
+    }
+    .grid-section{
+        height: auto;
+        width: 90%;
+        margin: 0 5%;
+
+        .text-section{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span{
+                font-size: var(--normal-font-size);
+                font-weight: bold;
+                text-transform: capitalize;
+                color: var(--primary-text-color);
+            }
+        }
+
+        .grid-item-section{
+            height: 100px;
+            width: 45%;
+            margin: 2.5%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--item-background-color);
+            
+            .circle{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+
+            .square{
+                width: 50px;
+                height: 50px;
+            }
+
+            .rectangle{
+                width: 70px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) {
+
+    .page-content{
+        .shapes-section{
+            .value-section{
+                .each-value-section{
+                    margin: 10px 1%;
+                }
+            }
+        }
+        .color-section{
+            .value-section{
+                .each-value-section{
+                    margin: 10px 1%;
+                }
+            }
+        }
+        .grid-section{
+            .grid-item-section{
+                height: 100px;
+                width: 30%;
+                margin: 10px 1.5%;
+                float: left;
+            }
+        }
+    }
+
+}
+
+@media all and (min-width: 1000px) {
+
+    .page-content{
+        .shapes-section{
+            .value-section{
+                .each-value-section{
+                    margin: 10px .5%;
+                }
+            }
+        }
+        .color-section{
+            .value-section{
+                .each-value-section{
+                    margin: 10px .5%;
+                }
+            }
+        }
+        .grid-section{
+            .grid-item-section{
+                height: 150px;
+                width: 22%;
+                margin: 10px 1.5%;
+                float: left;
+            
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+    
+                .square{
+                    width: 100px;
+                    height: 100px;
+                }
+    
+                .rectangle{
+                    width: 100px;
+                    height: 50px;
+                }
+                
+            }
+        }
+    }
+
+}
+
+@media all and (min-width: 1400px) {
+
+    .page-content{
+        .shapes-section{
+            width: 80%;
+            margin: 0 10%;
+        }
+        .color-section{
+            width: 80%;
+            margin: 0 10%;
+        }
+        .grid-section{
+            width: 80%;
+            margin: 0 10%;
+
+            .grid-item-section{
+                height: 150px;
+                width: 17%;
+                margin: 10px 1.5%;
+                float: left;
+            
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+    
+                .square{
+                    width: 100px;
+                    height: 100px;
+                }
+    
+                .rectangle{
+                    width: 100px;
+                    height: 50px;
+                }
+                
+            }
+        }
+    }
+}
+@media all and (min-width: 2000px) {
+
+    .page-content{
+        .shapes-section{
+            width: 70%;
+            margin: 0 15%;
+        }
+        .color-section{
+            width: 70%;
+            margin: 0 15%;
+        }
+        .grid-section{
+            width: 70%;
+            margin: 0 15%;
+
+            .grid-item-section{
+                height: 200px;
+                width: 17%;
+                margin: 10px 1.5%;
+                float: left;
+            
+                .circle{
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+    
+                .square{
+                    width: 120px;
+                    height: 120px;
+                }
+    
+                .rectangle{
+                    width: 120px;
+                    height: 80px;
+                }
+                
+            }
+        }
+    }
+    
+}

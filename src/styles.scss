@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: var(--background-color);
+}
+
+body { 
+
+    // LIGHT THEME
+    --background-color: #FFFFFF;
+    --nav-color: #f2f2f2;
+    --btn-color: #E53935;
+    --btn-text-color: #FFFFFF;
+    --primary-text-color: #15181E;
+    --secondary-text-color: #000;
+    --border-color: #000;
+    --item-background-color: #ccc;
+    --item-box-shadow: 0 2px 4px 0 rgba(253, 10, 93, 0.15);
+
+
+    --big-font-size: 20px;
+    --normal-font-size: 15px;
+    --small-font-size: 13px;
+    --icon-font-size: 20px;
+}
+
+
